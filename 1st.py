@@ -29,3 +29,4 @@ print("my name is {} and my email is {}".format(name,email))   #for formating
 
 print(f"my name is {name} and my email is {email}")   # f string formating
 print(r"he\tll\bo \" tops") #for raw string
+ 
