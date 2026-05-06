@@ -47,7 +47,7 @@ match choice:
         
 #match case statment using calculator
 
-choice = 3
+choice = 5
 a = 10
 b = 20
 match choice:
@@ -59,5 +59,9 @@ match choice:
         print(a * b)
     case 4:
         print(a / b)
+    case 5:
+        print(a % b)
+    case 6:
+        print(a ** b)
     case _:
         print("invalid choice")
