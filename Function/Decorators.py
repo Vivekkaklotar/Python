@@ -19,3 +19,67 @@ test()
 
 #--------------------------Example--------------------------
 
+def add(func):
+    def exceute(*a):
+        sum =0
+        for i in a:
+            sum +=i
+        print(f"addtion is {sum}")
+        func(*a)
+    return exceute
+
+def mul(func):
+    def exceute(*a):
+        sum =1
+        for i in a:
+            sum *=i
+        print(f"multiplication is {sum}")
+        func(*a)
+    return exceute
+
+@mul
+@add
+def calc(a,b):
+    pass
+
+calc(10,20)
+
+
+def numbers_only(func):
+    def execute(a):
+        if str(a).isdigit():
+            func(a)
+        else:
+            print("Invalid input")
+    return execute
+
+def chars_only(func):
+    def execute(a):
+        if str(a).isalpha():
+            func(a)
+        else:
+            print("Invalid input")
+    return execute
+
+@chars_only
+def get(a):
+    print(a)
+    
+get("fdf")
+
+#------------------------------------------------------
+
+def chars_only(func):
+    def execute(a):
+        if str(a).isalnum():
+            func(a)
+        else:
+            print("Invalid input")
+    return execute
+
+@chars_only
+def get(a):
+    print(a)
+    
+get("fdf9537")
+get("fdf@9537")

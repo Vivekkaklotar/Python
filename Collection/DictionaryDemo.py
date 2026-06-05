@@ -2,44 +2,44 @@
 #duplicate values are allowed
 #duplicate keys not allowed
 
-student = {
-    "name":"vivek",
-    "email":"vivek@gmail.com",
-    "age":22
-    }
+# student = {
+#     "name":"vivek",
+#     "email":"vivek@gmail.com",
+#     "age":22
+#     }
 
 
-print(student['name'])
-print(student.get("name1"))
+# print(student['name'])
+# print(student.get("name1"))
 
-print(student.keys())
-print(student.values())
-print(student.items())
+# print(student.keys())
+# print(student.values())
+# print(student.items())
 
-#add update methods
+# #add update methods
 
-print(student['name'])
-student['name1']="xyz"
-print(student)
+# print(student['name'])
+# student['name1']="xyz"
+# print(student)
 
-st= {"phone":"9562351523","gender":"male"}
-# student.update({"phone":"7573928352"})
+# st= {"phone":"9562351523","gender":"male"}
+# # student.update({"phone":"7573928352"})
 
-student.update(st)
-print(student)
+# student.update(st)
+# print(student)
 
-#remove methods (pop)
-student.pop("name")
-student.popitem()
+# #remove methods (pop)
+# student.pop("name")
+# student.popitem()
 
-#clear method
-student.clear()
-print(student)
+# #clear method
+# student.clear()
+# print(student)
 
 #del method
-del student['name']
-del student
-print(student)
+# del student['name']
+# del student
+# print(student)
 
 
 country = {
